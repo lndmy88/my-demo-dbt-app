@@ -10,12 +10,12 @@ services:
       timeout: 5s
       retries: 5
 
-  dbt:
-    container_name: dbt
-    build: .
-    #image: lndmy/dbt:latest
-    volumes:
-      - ./:/usr/src/dbt
-    depends_on:
-      postgres:
-        condition: service_healthy
+  # dbt:
+  #   container_name: dbt
+  #   build: .
+  #   #image: lndmy/dbt:latest
+  #   volumes:
+  #     - ./:/usr/src/dbt
+  #   depends_on:
+  #     postgres:
+  #       condition: service_healthy
