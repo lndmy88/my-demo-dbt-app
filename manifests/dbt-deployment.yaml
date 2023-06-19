@@ -30,5 +30,6 @@ spec:
       volumes:
         - name: hostvol
           hostPath:
-            path: /Users/linhnguyen/Demos/my-demo-dbt-app/src
+            #path: /Users/linhnguyen/Demos/my-demo-dbt-app/src
+            path: /home/ec2-user/environment/my-demo-dbt-app/src
 
